@@ -23,7 +23,7 @@ db = SQLAlchemy(app)
 class Task(db.Model):
     id = db.Column(db.Integer, primary_key=True) # A unique ID for each task. The primary key.
     task = db.Column(db.String(200), nullable=False) # The task name, cannot be empty.
-    status = db.Column(db.Boolean, default=False)
+    status = db.Column(db.Boolean, default=False) # Define a column named 'status' in the Task table; it stores True/False values (Boolean) and defaults to False (meaning the task is not completed when first created).
 
 @app.route('/')  # Define the route for the homepage (root URL).
 def index():  # Define the function to handle requests to the homepage.

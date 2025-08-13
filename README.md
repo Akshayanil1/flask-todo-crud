@@ -2,18 +2,27 @@
 
 Live Demo: https://akshayanil15.pythonanywhere.com/
 
-## Features
-- Add, update, and delete tasks
-- SQLite database
-- Simple UI
+# CRUD Skill Tracker
 
-## Run Locally
-```bash
-git clone https://github.com/Akshayanil1/flask-todo-crud.git
-cd flask-todo-crud
-python -m venv evenv
-source evenv/bin/activate  # Linux/Mac
-evenv\Scripts\activate    # Windows
-pip install -r requirements.txt
-python -c "from app import app, db; with app.app_context(): db.create_all()"
-python app.py
+A full-stack web application for tracking personal skills, built with Python and Flask. This project demonstrates core web development principles including persistent data storage, dynamic rendering, and handling user input.
+
+## Features
+
+- **Create:** Add new skills to the database via a web form.
+- **Read:** View all current skills in a clean, styled list.
+- **Delete:** Remove skills from the database.
+- **Persistent Storage:** All data is stored in a SQLite database using the SQLAlchemy ORM.
+
+## Technologies Used
+
+- **Backend:** Python, Flask, Flask-SQLAlchemy
+- **Database:** SQLite
+- **Frontend:** HTML, Pico.css
+- **Environment:** Python Virtual Environments (`venv`)
+
+## How to Run
+
+1.  Clone the repository.
+2.  Create and activate a virtual environment: `python -m venv venv`
+3.  Install dependencies: `pip install -r requirements.txt` (We will create this file next).
+4.  Run the application: `python app.py`
